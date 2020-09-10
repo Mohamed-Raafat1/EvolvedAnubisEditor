@@ -198,10 +198,10 @@ class Widget(QWidget):
         text.setText(s)
 
     def on_clicked(self, index):
-
+        #accquiring file path
         nn = self.sender().model().filePath(index)
 
-        print(nn)
+        #seperating extension from path and placing into a global variable
         global_vars.extension=os.path.splitext(nn)[1]
 
         Python_Coloring.SyntaxHighlighter(text)

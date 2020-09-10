@@ -179,6 +179,7 @@ class SyntaxHighlighter(QSyntaxHighlighter):
     def highlightBlock(self, text):
         """Apply syntax highlighting to the given block of text.
         """
+        #checking extensions either it's .py file or a .cs file if neither then don't do any formatting
         if(global_vars.extension=='.py'):
             # Do other syntax formatting
             for expression, nth, format in self.PythonRules:
