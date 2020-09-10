@@ -1,7 +1,7 @@
 #############      author => Anubis Graduation Team        ############
 #############      this project is part of my graduation project and it intends to make a fully functioned IDE from scratch    ########
 #############      I've borrowed a function (serial_ports()) from a guy in stack overflow whome I can't remember his name, so I gave hime the copyrights of this function, thank you  ########
-
+""" Newly added support for Csharp syntax highlighting"""
 import os
 import sys
 import glob
