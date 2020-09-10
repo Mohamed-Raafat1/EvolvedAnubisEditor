@@ -7,7 +7,7 @@ import sys
 import glob
 import serial
 import global_vars
-import Python_Coloring
+import Syntax_Highlighting
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import *
@@ -204,7 +204,7 @@ class Widget(QWidget):
         #seperating extension from path and placing into a global variable
         global_vars.extension=os.path.splitext(nn)[1]
 
-        Python_Coloring.SyntaxHighlighter(text)
+        Syntax_Highlighting.SyntaxHighlighter(text)
         nn = tuple([nn])
 
         if nn[0]:
